@@ -1,0 +1,69 @@
+@class-prefix: ~'ljm-tabs-page';
+
+.@{class-prefix} {
+  --tab-bar-height: var(--ljm-nav-bar-height);
+  --tab-bar-margin: var(--ljm-tabs-page-tab-bar-margin);
+  --tab-bar-border-bottom: var(--ljm-tabs-page-tab-bar-border-bottom);
+  --tab-bar-background-color: var(--ljm-tabs-page-tab-bar-background-color);
+
+  --tab-bar-title-color: var(--ljm-nav-bar-title-color);
+  --tab-bar-active-title-color: var(--ljm-tabs-page-active-title-color);
+  --tab-bar-title-font-size: var(--ljm-nav-bar-title-font-size);
+  --tab-bar-active-title-font-size: var(--ljm-nav-bar-active-title-font-size);
+  --tab-bar-active-line-height: var(--ljm-tabs-page-active-line-height);
+  --tab-bar-active-line-border-radius: var(--tab-bar-active-line-height);
+  --tab-bar-active-line-color: var(--tab-bar-active-title-color);
+
+  --tab-content-padding: var(--ljm-content-padding);
+
+  .adm-tabs {
+    --title-color: var(--tab-bar-title-color);
+    --active-title-color: var(--tab-bar-active-title-color);
+    --title-font-size: var(--tab-bar-title-font-size);
+    --active-title-font-size: var(--tab-bar-active-title-font-size);
+    --active-line-height: var(--tab-bar-active-line-height);
+    --active-line-border-radius: var(--tab-bar-active-line-border-radius);
+    --active-line-color: var(--tab-bar-active-line-color);
+
+    --content-padding: var(--tab-content-padding);
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .adm-tabs-header {
+      flex-shrink: 0;
+      color: var(--title-color);
+      font-size: var(--title-font-size);
+      border-bottom: var(--tab-bar-border-bottom);
+      background-color: var(--tab-bar-background-color);
+    }
+
+    .adm-tabs-tab-active {
+      color: var(--active-title-color);
+      font-size: var(--active-title-font-size);
+    }
+
+    .adm-tabs-content {
+      height: 100%;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .adm-tabs-tab-list {
+      height: var(--tab-bar-height);
+      margin: 0 var(--tab-bar-margin);
+    }
+  }
+
+  &-default {
+  }
+
+  &-primary {
+    --tab-bar-title-color: #ffffff;
+    --tab-bar-active-title-color: #ffffff;
+    --tab-bar-active-line-color: #ffffff;
+    --tab-bar-border-bottom: none;
+    --tab-bar-background-color: #589af8;
+  }
+}

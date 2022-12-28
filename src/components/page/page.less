@@ -1,0 +1,87 @@
+@class-prefix: ~'ljm-page';
+
+.@{class-prefix} {
+  --nav-bar-height: var(--ljm-nav-bar-height);
+  --nav-bar-border-bottom: var(--ljm-nav-bar-border-bottom);
+  --nav-bar-background-color: var(--ljm-nav-bar-background-color);
+  --nav-bar-color: var(--ljm-nav-bar-color);
+  --nav-bar-title-font-size: var(--ljm-nav-bar-title-font-size);
+  --nav-bar-left-right-font-size: var(--ljm-nav-bar-left-right-font-size);
+  --nav-bar-icon-font-size: var(--ljm-nav-bar-icon-font-size);
+
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &-header {
+    --height: var(--nav-bar-height);
+    --border-bottom: var(--nav-bar-border-bottom);
+    color: var(--nav-bar-color);
+    background-color: var(--nav-bar-background-color);
+    flex-shrink: 0;
+
+    .adm-nav-bar-title {
+      color: var(--nav-bar-color);
+      font-size: var(--nav-bar-title-font-size);
+    }
+
+    .adm-nav-bar-left,
+    .adm-nav-bar-right {
+      font-size: var(--nav-bar-left-right-font-size);
+
+      svg {
+        font-size: var(--nav-bar-icon-font-size);
+      }
+    }
+  }
+
+  &-content {
+    height: 100%;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &-default {
+    --nav-bar-color: var(--ljm-nav-bar-color);
+    --nav-bar-background-color: var(--ljm-nav-bar-background-color);
+    --nav-bar-border-bottom: var(--ljm-nav-bar-border-bottom);
+  }
+
+  &-primary {
+    --nav-bar-color: var(--adm-color-white);
+    --nav-bar-background-color: var(--adm-color-primary);
+    --nav-bar-border-bottom: none;
+  }
+
+  &-notitle {
+    .@{class-prefix}-header {
+      --height: 0;
+      --border-bottom: none;
+    }
+
+    .adm-nav-bar-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      height: var(--nav-bar-height);
+      padding: 0 12px;
+    }
+
+    .adm-nav-bar-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      height: var(--nav-bar-height);
+      padding: 0 12px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}

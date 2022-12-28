@@ -1,0 +1,25 @@
+@class-prefix: ~'ljm-progress-modal';
+
+.@{class-prefix} {
+  --font-size: var(--adm-font-size-main);
+
+  &-content {
+    width: 100%;
+  }
+
+  &-message {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size);
+  }
+
+  &-percent {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size);
+  }
+
+  .adm-progress-bar {
+    --track-width: 8px;
+  }
+}

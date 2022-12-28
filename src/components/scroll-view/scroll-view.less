@@ -1,0 +1,68 @@
+@class-prefix: ~'ljm-scroll-view';
+
+.@{class-prefix} {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &-content {
+    width: 100%;
+  }
+
+  &-content-wrapper {
+  }
+
+  &-loading-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  &-empty-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  &-pulldown-wrapper {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #999;
+    text-align: center;
+    transform: translateY(-100%) translateZ(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-pullup-wrapper {
+    width: 100%;
+    padding: 20px;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.@{class-prefix}-vertical {
+}
+
+.@{class-prefix}-horizontal {
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+
+  .@{class-prefix}-content {
+    display: inline-block;
+    width: auto;
+  }
+}
