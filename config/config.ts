@@ -13,7 +13,7 @@ const postcssDisableCSSVars = require('../scripts/postcss-disable-css-vars.js');
 
 const config: IConfig = {
   mode: 'site',
-  title: 'LJCommon',
+  title: 'LJ Node',
   logo: 'https://gw.alipayobjects.com/zos/bmw-prod/b874caa9-4458-412a-9ac6-a61486180a62.svg',
   favicon: 'https://gw.alipayobjects.com/zos/bmw-prod/69a27fcc-ce52-4f27-83f1-c44541e9b65d.svg',
   navs,
@@ -23,7 +23,7 @@ const config: IConfig = {
     passivePreview: true,
   },
   alias: {
-    'ljcommon/es': process.cwd() + '/src',
+    'ljnode/es': process.cwd() + '/src',
     'demos': process.cwd() + '/src/demos/index.ts',
   },
   metas: [
@@ -33,7 +33,7 @@ const config: IConfig = {
     },
     {
       name: 'keywords',
-      content: 'ljcommon, antd-mobile, ant design mobile, React mobile components',
+      content: 'ljnode, antd-mobile, ant design mobile, React mobile components',
     },
     {
       name: 'description',

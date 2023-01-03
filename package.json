@@ -1,12 +1,12 @@
 {
-  "name": "ljcommon",
-  "version": "1.0.0-beta.15",
+  "name": "ljnode",
+  "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",
+    "start2": "dumi build",
     "build": "gulp",
     "build-doc": "dumi build && echo '!.*' > dist/.surgeignore",
     "lint": "eslint .",
-    "postinstall": "husky install",
     "test": "jest",
     "test-with-coverage": "jest --coverage",
     "package-diff": "antd-tools run package-diff --path=./dist",
@@ -15,14 +15,11 @@
     "pub:dev": "npm publish ./dist --tag dev"
   },
   "dependencies": {
-    "@icon-park/react": "^1.4.2",
-    "ahooks": "^3.7.0",
-    "antd-mobile": "^5.27.0",
-    "better-scroll": "^2.5.0",
-    "classnames": "^2.3.2",
     "dayjs": "^1.11.4",
     "eventemitter3": "^4.0.7",
-    "lodash": "^4.17.21"
+    "fs-extra": "^11.1.0",
+    "lodash": "^4.17.21",
+    "universalify": "^2.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
@@ -124,8 +121,8 @@
   "module": "./es/index.js",
   "types": "./es/index.d.ts",
   "typings": "./es/index.d.ts",
-  "unpkg": "./umd/ljcommon.js",
-  "GravityCDN": "./umd/ljcommon.js",
+  "unpkg": "./umd/ljnode.js",
+  "GravityCDN": "./umd/ljnode.js",
   "files": [
     "./dist"
   ],
@@ -142,7 +139,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kecoyo/ljcommon.git",
+    "url": "git+https://github.com/kecoyo/ljnode.git",
     "branch": "master",
     "platform": "github"
   }

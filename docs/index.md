@@ -1,5 +1,5 @@
 ---
-title: LJCommon
+title: LJ Node
 full: true
 gapless: true
 ---

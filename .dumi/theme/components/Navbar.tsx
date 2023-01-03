@@ -28,7 +28,7 @@ const Navbar: FC<INavbarProps> = ({ location, darkPrefix }) => {
   const isHomePage = pathname === base || pathname === base + '/';
 
   const navItems = useMemo(() => {
-    if (typeof window !== undefined && window.location.host === 'ljcommon.antgroup.com') {
+    if (typeof window !== undefined && window.location.host === 'ljnode.antgroup.com') {
       return nav.filter(item => item.title !== '国内镜像');
     }
 

@@ -15,9 +15,9 @@
     "typeRoots": ["./src/typings", "./node_modules/@types"],
     "lib": ["ES2016", "DOM"],
     "paths": {
-      "ljcommon": ["src/index.ts"],
-      "ljcommon/src/*": ["src/*"],
-      "ljcommon/es/*": ["src/*"],
+      "ljnode": ["src/index.ts"],
+      "ljnode/src/*": ["src/*"],
+      "ljnode/es/*": ["src/*"],
       "demos": ["src/demos/index.ts"],
       "testing": ["src/tests/testing"]
     },

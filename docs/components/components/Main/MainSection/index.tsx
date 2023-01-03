@@ -24,7 +24,7 @@ export default (props: { isWidthScreen: boolean }) => {
   return (
     <div className={styles.mainSectionContainer}>
       <div>
-        <div className={styles.mainSectionTitle}>LJCommon</div>
+        <div className={styles.mainSectionTitle}>LJ Node</div>
         <div className={styles.mainSectionDescription}>
           {'探索移动端 Web 的体验极限'}
         </div>

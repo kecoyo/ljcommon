@@ -115,7 +115,7 @@ function getViteConfigForPackage({ env, formats, external }) {
     build: {
       cssTarget: 'chrome61',
       lib: {
-        name: 'ljcommon',
+        name: 'ljnode',
         entry: './dist/es/index.js',
         formats,
         fileName: format => `${name}.${format}${isProd ? '' : `.${env}`}.js`,
@@ -157,10 +157,10 @@ function umdWebpack() {
       webpackStream(
         {
           output: {
-            filename: 'ljcommon.js',
+            filename: 'ljnode.js',
             library: {
               type: 'umd',
-              name: 'ljcommon',
+              name: 'ljnode',
             },
           },
           mode: 'production',
@@ -244,7 +244,7 @@ function umdWebpack() {
 }
 
 function copyUmd() {
-  return gulp.src(['dist/umd/ljcommon.js']).pipe(rename('ljcommon.compatible.umd.js')).pipe(gulp.dest('dist/bundle/'));
+  return gulp.src(['dist/umd/ljnode.js']).pipe(rename('ljnode.compatible.umd.js')).pipe(gulp.dest('dist/bundle/'));
 }
 
 function copyMetaFiles() {

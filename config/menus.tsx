@@ -22,13 +22,5 @@ export const menus = {
       title: '通用',
       children: components.common,
     },
-    {
-      title: 'antd-mobile',
-      children: components.antdMobile,
-    },
-    {
-      title: '布局',
-      children: components.layout,
-    },
   ],
 };

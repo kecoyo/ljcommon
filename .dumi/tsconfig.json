@@ -17,9 +17,9 @@
     "noImplicitAny": false,
     "resolveJsonModule": true,
     "paths": {
-      "ljcommon": ["../src/index.ts"],
-      "ljcommon/src/*": ["../src/*"],
-      "ljcommon/es/*": ["../src/*"]
+      "ljnode": ["../src/index.ts"],
+      "ljnode/src/*": ["../src/*"],
+      "ljnode/es/*": ["../src/*"]
     }
   }
 }

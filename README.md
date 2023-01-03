@@ -1,7 +1,7 @@
 <div align="center">
 
   <img src="https://gw.alipayobjects.com/zos/bmw-prod/b2c7ff8b-eba0-4af9-9dd5-0b5b17f42c57.svg" alt="logo" width="200" height="auto" />
-  <h1>LJCommon</h1>
+  <h1>LJ Node</h1>
 
   <p>
     Essential UI blocks for building mobile web apps. 
@@ -10,9 +10,9 @@
 </div>
 
 ```bash
-$ npm install --save ljcommon
+$ npm install --save ljnode
 # or
-$ yarn add ljcommon
+$ yarn add ljnode
 ```
 
 - **Fast**: It is carefully optimized for harsh scenes, without configuration, you can have the best package size and ultimate performance.
@@ -20,7 +20,7 @@ $ yarn add ljcommon
 - **Atomic**: The function of each component, neither more nor less, is exactly what you need.
 - **Fluent**: With smooth gestures and delicate animation, it helps the product create the ultimate experience.
 
-You can also play with ljcommon just in browser with [Codesandbox](https://codesandbox.io/s/ljcommon-snrxr?file=/package.json). No need to prepare development environment.
+You can also play with ljnode just in browser with [Codesandbox](https://codesandbox.io/s/ljnode-snrxr?file=/package.json). No need to prepare development environment.
 
 If you found bugs or would like to request some new features, please consider opening an [issue](https://github.com/ant-design/ant-design-mobile/issues/new).
 

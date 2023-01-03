@@ -23,7 +23,7 @@ module.exports = {
   },
   moduleNameMapper: {
     '\\.(css|less)$': '<rootDir>/src/tests/mocks/style-mock.js',
-    '^ljcommon$': '<rootDir>/src/index.ts',
+    '^ljnode$': '<rootDir>/src/index.ts',
   },
   watchPlugins: [
     'jest-watch-typeahead/filename',
