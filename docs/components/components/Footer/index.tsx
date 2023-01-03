@@ -1,14 +1,4 @@
 import React from 'react';
-import {
-  AntDesignOutlined,
-  MediumOutlined,
-  TwitterOutlined,
-  ZhihuOutlined,
-  GithubOutlined,
-  BugOutlined,
-  IssuesCloseOutlined,
-  QuestionCircleOutlined,
-} from '@ant-design/icons';
 import styles from './index.local.less';
 
 export default () => {

@@ -4,7 +4,7 @@ import { QRCodeSVG } from 'qrcode.react'
 import { context } from 'dumi/theme'
 import { usePrefersColor } from 'dumi/theme'
 import './device.less'
-import { Popover } from 'antd-mobile'
+import Popover, { Action } from 'antd-mobile/es/components/popover';
 
 interface IDeviceProps {
   className?: string

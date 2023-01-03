@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from 'antd';
-import Lottie from 'react-lottie';
+import Button from 'antd-mobile/es/components/button';
 import styles from './index.local.less';
 
 export default (props: { isWidthScreen: boolean }) => {
@@ -9,38 +8,24 @@ export default (props: { isWidthScreen: boolean }) => {
   const { isWidthScreen } = props;
 
   useEffect(() => {
-    document
-      .querySelector('#calendarImage')
-      ?.addEventListener('mouseenter', () => {
-        setStartFireAnimation(true);
-      });
-    document
-      .querySelector('#resultImage')
-      ?.addEventListener('mouseenter', () => {
-        setStartResultAnimation(true);
-      });
+    document.querySelector('#calendarImage')?.addEventListener('mouseenter', () => {
+      setStartFireAnimation(true);
+    });
+    document.querySelector('#resultImage')?.addEventListener('mouseenter', () => {
+      setStartResultAnimation(true);
+    });
   }, []);
 
   return (
     <div className={styles.mainSectionContainer}>
       <div>
         <div className={styles.mainSectionTitle}>LJ Node</div>
-        <div className={styles.mainSectionDescription}>
-          {'探索移动端 Web 的体验极限'}
-        </div>
+        <div className={styles.mainSectionDescription}>{'探索移动端 Web 的体验极限'}</div>
         <div className={styles.mainSectionButtonAction}>
-          <Button
-            shape='round'
-            className={styles.buttonLeft}
-            href={'/guide/quick-start'}
-          >
+          <Button shape='round' className={styles.buttonLeft} href={'/guide/quick-start'}>
             {'开始使用'}
           </Button>
-          <Button
-            shape='round'
-            className={styles.buttonRight}
-            href={'/components'}
-          >
+          <Button shape='round' className={styles.buttonRight} href={'/components'}>
             {'在线体验'}
           </Button>
         </div>
@@ -50,12 +35,11 @@ export default (props: { isWidthScreen: boolean }) => {
           className={styles.calendarImage}
           id='calendarImage'
           style={{
-            backgroundImage:
-              'url(https://gw.alipayobjects.com/zos/bmw-prod/db18b4de-20f5-403e-9075-a413518934e3.svg)',
+            backgroundImage: 'url(https://gw.alipayobjects.com/zos/bmw-prod/db18b4de-20f5-403e-9075-a413518934e3.svg)',
           }}
         >
           <div className={styles.publishDayAnimation}>
-            <Lottie
+            {/* <Lottie
               options={{
                 loop: false,
                 autoplay: false,
@@ -73,11 +57,11 @@ export default (props: { isWidthScreen: boolean }) => {
               width={startFireAnimation ? (isWidthScreen ? 280 : 172) : 0}
               isStopped={!startFireAnimation}
               style={{ pointerEvents: 'none' }}
-            />
+            /> */}
           </div>
         </div>
         <div className={styles.resultImage} id='resultImage'>
-          <Lottie
+          {/* <Lottie
             options={{
               loop: false,
               autoplay: false,
@@ -96,7 +80,7 @@ export default (props: { isWidthScreen: boolean }) => {
             // isStopped={!startResultAnimation}
             isStopped
             style={{ pointerEvents: 'none' }}
-          />
+          /> */}
         </div>
         <img
           className={styles.staticImage}

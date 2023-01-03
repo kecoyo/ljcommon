@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { context } from 'dumi/theme';
-import { Popover } from 'antd-mobile';
+import Popover, { Action } from 'antd-mobile/es/components/popover';
 
 export default () => {
   const [showPopover, setShowPopover] = useState(false);

@@ -15,6 +15,7 @@
     "pub:dev": "npm publish ./dist --tag dev"
   },
   "dependencies": {
+    "ali-oss": "^6.17.1",
     "dayjs": "^1.11.4",
     "eventemitter3": "^4.0.7",
     "fs-extra": "^11.1.0",
@@ -56,7 +57,6 @@
     "@typescript-eslint/parser": "^5.44.0",
     "@umijs/types": "^3.5.35",
     "@use-gesture/core": "10.2.20",
-    "antd": "^4.24.3",
     "antd-mobile": "^5.27.0",
     "autoprefixer": "^9.8.8",
     "babel-loader": "^8.3.0",
@@ -94,12 +94,7 @@
     "prismjs": "^1.29.0",
     "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
-    "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-lottie": "^1.2.3",
-    "react-test-renderer": "^18.2.0",
-    "react-virtualized": "^9.22.3",
     "style-loader": "^3.3.1",
     "through2": "^4.0.2",
     "ts-jest": "^28.0.8",

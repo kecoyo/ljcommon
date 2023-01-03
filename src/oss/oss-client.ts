@@ -1,6 +1,6 @@
-const OSS = require('ali-oss');
+import OSS from 'ali-oss';
 
-class OssClient extends OSS {
+export class OssClient extends OSS {
   // 列出文件列表
   async listOssFile(query) {
     let list = [];
@@ -58,5 +58,3 @@ class OssClient extends OSS {
     }
   }
 }
-
-module.exports = OssClient;

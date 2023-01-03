@@ -1,20 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Button, Card } from 'antd';
-import Lottie from 'react-lottie';
+import Button from 'antd-mobile/es/components/button';
+import Card from 'antd-mobile/es/components/card';
 import { useSize } from 'ahooks';
-import { RightOutlined } from '@ant-design/icons';
+import { RightOutline } from 'antd-mobile-icons';
 import MainSection from './MainSection';
-import {
-  productIntroduce,
-  productIntroduceEn,
-  getProductResource,
-  productDesignValues,
-  productDesignValuesEn,
-  getProductDesignValuesBackgroundImage,
-  getGuides,
-  getRecommends,
-  users,
-} from './config';
+import { getProductResource, getGuides } from './config';
 import styles from './index.local.less';
 
 export default () => {
@@ -103,7 +93,7 @@ export default () => {
                   <div className={styles.guideCardButton}>
                     <a href={guide.buttonLink}>
                       {guide.buttonText}
-                      <RightOutlined />
+                      <RightOutline />
                     </a>
                   </div>
                 </div>

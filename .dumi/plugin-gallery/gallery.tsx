@@ -1,5 +1,9 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
-import { List, NavBar, Popover, SafeArea, SearchBar } from 'antd-mobile';
+import List from 'antd-mobile/es/components/list';
+import NavBar from 'antd-mobile/es/components/nav-bar';
+import Popover from 'antd-mobile/es/components/popover';
+import SafeArea from 'antd-mobile/es/components/safe-area';
+import SearchBar from 'antd-mobile/es/components/search-bar';
 // @ts-ignore
 import ComponentConfig from '@@/dumi/config';
 // @ts-ignore

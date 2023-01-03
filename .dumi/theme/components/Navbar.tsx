@@ -8,8 +8,7 @@ import './Navbar.less';
 import homeStyle from './NavbarHome.less';
 import p from '../../../package.json';
 import SearchBar from './SearchBar';
-import { Popover } from 'antd-mobile';
-import { Action } from 'antd-mobile/es/components/popover';
+import Popover, { Action } from 'antd-mobile/es/components/popover';
 
 interface INavbarProps {
   location: any;
